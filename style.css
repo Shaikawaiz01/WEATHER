@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+}
+.main_container {
+    position: relative;
+    border-radius: 20px;
+    height: 500px;
+    width: 700px;
+    background-image: linear-gradient(to bottom right, rgb(36, 128, 208), rgb(141, 45, 141));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-top:2rem ;
+}
+
+.searchbar {
+    width: 400px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.searchicon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.image_container{
+    position: absolute; 
+    bottom: 10px;           
+    left: 10px;            
+    height: 400px;
+    width: 300px;
+
+    display: flex;
+    justify-content: start;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.main_content{
+    position: absolute;
+    width: 360px;
+    height: 130px;
+    top: 90px;
+    left: 325px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.cardcontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
+    left: 315px;
+    top: 220px;
+    border-radius: 20px;
+}
+.card {
+    position: relative;
+    width: 360px; 
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-self: start;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.image_container:hover{
+    height: 410px;
+    width: 310px;
+    transition: 0.5s;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.74);
+}
+.card:hover{
+    width: 370px;
+    height: 90px;
+    transition: 0.5s;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.74);
+}
+.main_content:hover{
+    width: 370px;
+    height: 140px;
+    transition: 0.5s;
+    box-shadow: 5px 10px 15px rgba(20, 18, 18, 0.74);
+
+}
+.temp{
+    font-size: 50px;       
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+.city{
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 10px;
+    align-self: center;
+}
+.card h2 {
+    font-size: 24px;       /* Make the text bigger */
+    color: white;          /* Make the text white */
+    margin: 0;             /* Remove default margin that causes spacing */
+    padding: 0;            /* Optional: just to ensure clean alignment */
+    line-height: 1.2;      /* Tighten line spacing */
+}
+.card > h2 {
+    display: block;
+    text-align: left;
+}
